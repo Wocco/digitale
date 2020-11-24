@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 14 17:25:52 2019
+# Process ID: 10940
+# Current directory: C:/Users/Wout/Documents/School/3digitaleElektronica/project1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2936 C:\Users\Wout\Documents\School\3digitaleElektronica\project1\project1.xpr
+# Log file: C:/Users/Wout/Documents/School/3digitaleElektronica/project1/vivado.log
+# Journal file: C:/Users/Wout/Documents/School/3digitaleElektronica/project1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Wout/Documents/School/3digitaleElektronica/project1/project1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Wout/Documents/School/3 digitale Elektronica/project1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 939.648 ; gain = 193.199
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/Wout/Documents/School/3digitaleElektronica/project_2_2/project_2_2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Wout/Documents/School/3 digitale Elektronica/project_2_2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 14 17:32:39 2019...

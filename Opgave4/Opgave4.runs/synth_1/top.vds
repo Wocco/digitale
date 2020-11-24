@@ -1,0 +1,499 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov 26 13:53:53 2019
+# Process ID: 10332
+# Current directory: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/top.vds
+# Journal file: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15856 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 404.785 ; gain = 101.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:24]
+INFO: [Synth 8-3491] module 'ClockingWizard' declared at 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/.Xil/Vivado-10332-DESKTOP-3EC4Q02/realtime/ClockingWizard_stub.v:5' bound to instance 'clk' of component 'ClockingWizard' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:110]
+INFO: [Synth 8-6157] synthesizing module 'ClockingWizard' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/.Xil/Vivado-10332-DESKTOP-3EC4Q02/realtime/ClockingWizard_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ClockingWizard' (1#1) [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/.Xil/Vivado-10332-DESKTOP-3EC4Q02/realtime/ClockingWizard_stub.v:5]
+INFO: [Synth 8-637] synthesizing blackbox instance 'lfsr1' of component 'lfsr' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:116]
+INFO: [Synth 8-3491] module 'VPulse' declared at 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/Vpulse.vhd:5' bound to instance 'VSync' of component 'VPulse' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'VPulse' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/Vpulse.vhd:29]
+	Parameter g_visible bound to: 480 - type: integer 
+	Parameter g_front bound to: 10 - type: integer 
+	Parameter g_back bound to: 33 - type: integer 
+	Parameter g_sync bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'HPulse' declared at 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/Hpulse.vhd:5' bound to instance 'HS' of component 'HPulse' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/Vpulse.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'HPulse' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/Hpulse.vhd:22]
+	Parameter g_visible bound to: 640 - type: integer 
+	Parameter g_front bound to: 16 - type: integer 
+	Parameter g_sync bound to: 96 - type: integer 
+	Parameter g_back bound to: 48 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'HPulse' (2#1) [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/Hpulse.vhd:22]
+WARNING: [Synth 8-549] port width mismatch for port 'Hcounter_out': port width = 10, actual width = 32 [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/package.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'VPulse' (3#1) [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/Vpulse.vhd:29]
+INFO: [Synth 8-3491] module 'VideoMemory' declared at 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/.Xil/Vivado-10332-DESKTOP-3EC4Q02/realtime/VideoMemory_stub.v:6' bound to instance 'VideoMem' of component 'VideoMemory' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:132]
+INFO: [Synth 8-6157] synthesizing module 'VideoMemory' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/.Xil/Vivado-10332-DESKTOP-3EC4Q02/realtime/VideoMemory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'VideoMemory' (4#1) [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/.Xil/Vivado-10332-DESKTOP-3EC4Q02/realtime/VideoMemory_stub.v:6]
+INFO: [Synth 8-3491] module 'VideoMemory' declared at 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/.Xil/Vivado-10332-DESKTOP-3EC4Q02/realtime/VideoMemory_stub.v:6' bound to instance 'VideoMem2' of component 'VideoMemory' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:148]
+INFO: [Synth 8-3491] module 'TriangleFifo' declared at 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/.Xil/Vivado-10332-DESKTOP-3EC4Q02/realtime/TriangleFifo_stub.v:6' bound to instance 'fifop' of component 'TriangleFifo' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:166]
+INFO: [Synth 8-6157] synthesizing module 'TriangleFifo' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/.Xil/Vivado-10332-DESKTOP-3EC4Q02/realtime/TriangleFifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TriangleFifo' (5#1) [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/.Xil/Vivado-10332-DESKTOP-3EC4Q02/realtime/TriangleFifo_stub.v:6]
+WARNING: [Synth 8-614] signal 'tel' is read in the process but is not in the sensitivity list [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:180]
+WARNING: [Synth 8-614] signal 'uitlezenuitgeheugenAB' is read in the process but is not in the sensitivity list [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:180]
+WARNING: [Synth 8-614] signal 'doutb2' is read in the process but is not in the sensitivity list [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:180]
+WARNING: [Synth 8-6014] Unused sequential element schermwit_reg was removed.  [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:297]
+WARNING: [Synth 8-6014] Unused sequential element busy_reg was removed.  [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:398]
+WARNING: [Synth 8-6014] Unused sequential element telleraantaldriehoeken_reg was removed.  [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:414]
+WARNING: [Synth 8-6014] Unused sequential element klaarvoordata_reg was removed.  [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:418]
+INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 459.984 ; gain = 156.938
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 459.984 ; gain = 156.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 459.984 ; gain = 156.938
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/VideoMemory/VideoMemory/VideoMemory_in_context.xdc] for cell 'VideoMem'
+Finished Parsing XDC File [c:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/VideoMemory/VideoMemory/VideoMemory_in_context.xdc] for cell 'VideoMem'
+Parsing XDC File [c:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/VideoMemory/VideoMemory/VideoMemory_in_context.xdc] for cell 'VideoMem2'
+Finished Parsing XDC File [c:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/VideoMemory/VideoMemory/VideoMemory_in_context.xdc] for cell 'VideoMem2'
+Parsing XDC File [c:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc] for cell 'clk'
+Finished Parsing XDC File [c:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc] for cell 'clk'
+Parsing XDC File [c:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/TriangleFifo/TriangleFifo/TriangleFifo_in_context.xdc] for cell 'fifop'
+Finished Parsing XDC File [c:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/TriangleFifo/TriangleFifo/TriangleFifo_in_context.xdc] for cell 'fifop'
+Parsing XDC File [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/constrs_1/imports/new/Nexys-A7-100t-Master.xdc]
+Finished Parsing XDC File [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/constrs_1/imports/new/Nexys-A7-100t-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/constrs_1/imports/new/Nexys-A7-100t-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 817.078 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'VideoMem' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'VideoMem2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 817.078 ; gain = 514.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 817.078 ; gain = 514.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for VideoMem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for VideoMem2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for fifop. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 817.078 ; gain = 514.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:366]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:377]
+INFO: [Synth 8-5545] ROM "startbres" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tellerdriehoek" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'g1_State_reg' in module 'top'
+WARNING: [Synth 8-327] inferring latch for variable 'tellerdata_reg' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:143]
+WARNING: [Synth 8-327] inferring latch for variable 'tel_reg' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:186]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 817.078 ; gain = 514.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   3 Input     10 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               59 Bit    Registers := 2     
+	               57 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	               19 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Multipliers : 
+	                11x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	  10 Input     32 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 2     
+	  10 Input     19 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 9     
+	  10 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               59 Bit    Registers := 2     
+	               57 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	               19 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Multipliers : 
+	                11x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	  10 Input     32 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 2     
+	  10 Input     19 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 9     
+	  10 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 18    
+Module HPulse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module VPulse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'sy_reg[31:0]' into 'sy_reg[31:0]' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:335]
+INFO: [Synth 8-4471] merging register 'sx_reg[31:0]' into 'sx_reg[31:0]' [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:334]
+WARNING: [Synth 8-6014] Unused sequential element sy_reg was removed.  [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:335]
+WARNING: [Synth 8-6014] Unused sequential element sx_reg was removed.  [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:334]
+INFO: [Synth 8-5545] ROM "tellerdriehoek" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP addra0, operation Mode is: C'+A2*(B:0x280).
+DSP Report: register sy_reg is absorbed into DSP addra0.
+DSP Report: register sx_reg is absorbed into DSP addra0.
+DSP Report: operator addra0 is absorbed into DSP addra0.
+DSP Report: operator addra1 is absorbed into DSP addra0.
+DSP Report: Generating DSP tel0, operation Mode is: C+A*(B:0x280).
+DSP Report: operator tel0 is absorbed into DSP tel0.
+DSP Report: operator tel1 is absorbed into DSP tel0.
+INFO: [Synth 8-3886] merging instance 'plusx_reg[0]' (FDE) to 'plusy_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\plusy_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\din_reg[1] )
+INFO: [Synth 8-3886] merging instance 'dina_reg[1]' (FDE) to 'dina_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dina_reg[2] )
+INFO: [Synth 8-3886] merging instance 'dina2_reg[0]' (FDE) to 'dina2_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dina2_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (tel_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (tel_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (err_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (e2_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (dina2_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (dina_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (din_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (plusy_reg[0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 817.078 ; gain = 514.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top         | C'+A2*(B:0x280) | 19     | 11     | 19     | -      | 19     | 1    | 0    | 1    | -    | -     | 0    | 0    | 
+|top         | C+A*(B:0x280)   | 11     | 11     | 11     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk/pixelClock' to pin 'clk/bbstub_pixelClock/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 854.090 ; gain = 551.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 904.391 ; gain = 601.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 905.391 ; gain = 602.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4649] Removing BlackBox instance lfsr1 of module lfsr_bbox_0 having unconnected or no output ports
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 905.391 ; gain = 602.344
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 905.391 ; gain = 602.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 905.391 ; gain = 602.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 905.391 ; gain = 602.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 905.391 ; gain = 602.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 905.391 ; gain = 602.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |ClockingWizard |         1|
+|2     |VideoMemory    |         2|
+|3     |TriangleFifo   |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |ClockingWizard |     1|
+|2     |TriangleFifo   |     1|
+|3     |VideoMemory    |     1|
+|4     |VideoMemory__1 |     1|
+|5     |BUFG           |     1|
+|6     |CARRY4         |    93|
+|7     |DSP48E1        |     1|
+|8     |DSP48E1_2      |     1|
+|9     |LUT1           |    12|
+|10    |LUT2           |   247|
+|11    |LUT3           |   135|
+|12    |LUT4           |    95|
+|13    |LUT5           |    75|
+|14    |LUT6           |    70|
+|15    |FDRE           |   496|
+|16    |FDSE           |     1|
+|17    |LD             |    38|
+|18    |OBUF           |    14|
++------+---------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1353|
+|2     |  VSync  |VPulse |    76|
+|3     |    HS   |HPulse |    38|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 905.391 ; gain = 602.344
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 905.391 ; gain = 245.250
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 905.391 ; gain = 602.344
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 133 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  LD => LDCE: 38 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 905.391 ; gain = 613.816
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 905.391 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 26 13:54:32 2019...

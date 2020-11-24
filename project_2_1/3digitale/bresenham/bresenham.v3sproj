@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Syntax Check</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>Work</RootNamespace>
+    <AssemblyName>bresenham</AssemblyName>
+    <ProjectGuid>{57791927-2CD2-4346-8A27-A2725836BD19}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <V3S-Project-Type>V3S Project</V3S-Project-Type>
+    <Name>bresenham</Name>
+    <ProjectFolder>C:\Users\Wout\Documents\School\3 digitale Elektronica\project_2_1\3digitale\bresenham</ProjectFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Syntax Check' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Full Compilation' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TopLevelEntity>drawline</TopLevelEntity>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="C:\Users\Wout\Documents\School\3 digitale Elektronica\project_2_1\project_2_1.xpr">
+      <SubType>Content</SubType>
+      <ContentTypeProperty>ProjectFile</ContentTypeProperty>
+      <LinkedFolder>C:\Users\Wout\Documents\School\3 digitale Elektronica\project_2_1\</LinkedFolder>
+      <LibraryName>work</LibraryName>
+      <NamingCheck>True</NamingCheck>
+      <ParsingOptions>FullParse</ParsingOptions>
+      <NotificationLevel>All</NotificationLevel>
+    </Content>
+    <Content Include="C:\Users\Wout\Documents\School\3 digitale Elektronica\project_2_1\project_2_1.srcs\sources_1\new\drawline.vhd">
+      <SubType>Content</SubType>
+      <ContentTypeProperty>Vhdl</ContentTypeProperty>
+      <LinkedFolder>C:\Users\Wout\Documents\School\3 digitale Elektronica\project_2_1\project_2_1.srcs\sources_1\new\</LinkedFolder>
+      <LibraryName>work</LibraryName>
+      <NamingCheck>True</NamingCheck>
+      <ParsingOptions>FullParse</ParsingOptions>
+      <NotificationLevel>All</NotificationLevel>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <LinkedFolder Include="C:\Users\Wout\Documents\School\3 digitale Elektronica\project_2_1\">
+      <RelativePath>..\..\</RelativePath>
+    </LinkedFolder>
+    <LinkedFolder Include="C:\Users\Wout\Documents\School\3 digitale Elektronica\project_2_1\project_2_1.srcs\sources_1\new\">
+      <RelativePath>..\..\project_2_1.srcs\sources_1\new\</RelativePath>
+    </LinkedFolder>
+    <LinkedFolder Include="C:\Users\Wout\Documents\School\3 digitale Elektronica\project_2_1\project_2_1.srcs\">
+      <RelativePath>..\..\project_2_1.srcs\</RelativePath>
+    </LinkedFolder>
+    <LinkedFolder Include="C:\Users\Wout\Documents\School\3 digitale Elektronica\project_2_1\project_2_1.srcs\sources_1\">
+      <RelativePath>..\..\project_2_1.srcs\sources_1\</RelativePath>
+    </LinkedFolder>
+  </ItemGroup>
+  <!-- insertExternalFiles !-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

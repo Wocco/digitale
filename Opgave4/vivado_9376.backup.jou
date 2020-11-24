@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 14 11:29:11 2019
+# Process ID: 9376
+# Current directory: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12260 C:\Users\Wout\Documents\School\3digitaleElektronica\Opgave4\Opgave4.xpr
+# Log file: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/vivado.log
+# Journal file: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.xpr
+update_compile_order -fileset sources_1
+launch_simulation

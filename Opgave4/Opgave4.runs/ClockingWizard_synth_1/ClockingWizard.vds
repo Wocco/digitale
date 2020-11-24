@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 14 12:15:03 2019
+# Process ID: 6800
+# Current directory: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/ClockingWizard_synth_1
+# Command line: vivado.exe -log ClockingWizard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ClockingWizard.tcl
+# Log file: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/ClockingWizard_synth_1/ClockingWizard.vds
+# Journal file: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.runs/ClockingWizard_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ClockingWizard.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ClockingWizard, cache-ID = 5bcaec5d22dbe603.
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 14 12:15:08 2019...

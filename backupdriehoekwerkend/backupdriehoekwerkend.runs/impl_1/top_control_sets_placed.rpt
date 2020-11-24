@@ -1,0 +1,86 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Nov 21 16:49:36 2019
+| Host         : DESKTOP-3EC4Q02 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    62 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            1 |
+|    16+ |           20 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             240 |           40 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              20 |            3 |
+| Yes          | No                    | No                     |             632 |           98 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             238 |           32 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+------------------------------------------------------------------------------------+----------------------------+------------------+----------------+
+|     Clock Signal     |                                    Enable Signal                                   |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++----------------------+------------------------------------------------------------------------------------+----------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG | g1_State                                                                           |                            |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | sy[8]_i_1_n_0                                                                      |                            |                5 |             18 |
+|  CLK100MHZ_IBUF_BUFG | sx[9]_i_1_n_0                                                                      |                            |                5 |             20 |
+|  clk/inst/pixelClock |                                                                                    | VSync/HS/clear             |                3 |             20 |
+|  clk/inst/pixelClock | VSync/HS/E[0]                                                                      | VSync/HS/SR[0]             |                3 |             20 |
+|  clk/inst/pixelClock |                                                                                    |                            |               11 |             28 |
+|  CLK100MHZ_IBUF_BUFG | fifop/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0] |                            |                5 |             36 |
+|  CLK100MHZ_IBUF_BUFG | fifop/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0] |                            |                5 |             36 |
+|  CLK100MHZ_IBUF_BUFG | addra[18]_i_1_n_0                                                                  |                            |                9 |             38 |
+|  CLK100MHZ_IBUF_BUFG | sx[9]_i_1_n_0                                                                      | sx[31]_i_1_n_0             |                6 |             44 |
+|  CLK100MHZ_IBUF_BUFG | sy[8]_i_1_n_0                                                                      | sx[31]_i_1_n_0             |                6 |             46 |
+|  CLK100MHZ_IBUF_BUFG | dy                                                                                 |                            |                8 |             46 |
+|  CLK100MHZ_IBUF_BUFG | e2[31]_i_1_n_0                                                                     |                            |               10 |             62 |
+|  CLK100MHZ_IBUF_BUFG | err[30]_i_1_n_0                                                                    |                            |                9 |             62 |
+|  CLK100MHZ_IBUF_BUFG | tellerdriehoek[31]_i_2_n_0                                                         | tellerdriehoek[31]_i_1_n_0 |                9 |             64 |
+|  CLK100MHZ_IBUF_BUFG | din[58]_i_1_n_0                                                                    | newframetel[0]_i_1_n_0     |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG | y1                                                                                 |                            |                9 |             76 |
+|  Write_BUFG          |                                                                                    |                            |               12 |             76 |
+|  CLK100MHZ_IBUF_BUFG | recentstedata[56]_i_1_n_0                                                          |                            |               18 |            114 |
+|  CLK100MHZ_IBUF_BUFG | din[58]_i_1_n_0                                                                    |                            |               13 |            116 |
+|  CLK100MHZ_IBUF_BUFG |                                                                                    |                            |               17 |            136 |
++----------------------+------------------------------------------------------------------------------------+----------------------------+------------------+----------------+
+
+

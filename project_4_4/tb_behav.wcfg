@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="examplepackage" />
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="48750682173000fs"></ZoomStartTime>
+      <ZoomEndTime time="48754267173001fs"></ZoomEndTime>
+      <Cursor1Time time="48751279673000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="163"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/tb/CLK100MHZ" type="logic">
+      <obj_property name="ElementShortName">CLK100MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/VGA_B" type="array">
+      <obj_property name="ElementShortName">VGA_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/VGA_G" type="array">
+      <obj_property name="ElementShortName">VGA_G[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_G[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/VGA_R" type="array">
+      <obj_property name="ElementShortName">VGA_R[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_R[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/pixelClock" type="logic">
+      <obj_property name="ElementShortName">pixelClock</obj_property>
+      <obj_property name="ObjectShortName">pixelClock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/lezenuit" type="logic">
+      <obj_property name="ElementShortName">lezenuit</obj_property>
+      <obj_property name="ObjectShortName">lezenuit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/end_of_frame" type="logic">
+      <obj_property name="ElementShortName">end_of_frame</obj_property>
+      <obj_property name="ObjectShortName">end_of_frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/frame_af_bresen" type="logic">
+      <obj_property name="ElementShortName">frame_af_bresen</obj_property>
+      <obj_property name="ObjectShortName">frame_af_bresen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/g1_State" type="other">
+      <obj_property name="ElementShortName">g1_State</obj_property>
+      <obj_property name="ObjectShortName">g1_State</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/wea" type="array">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/addra" type="array">
+      <obj_property name="ElementShortName">addra[18:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/dina2" type="array">
+      <obj_property name="ElementShortName">dina2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">dina2[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/addra2" type="array">
+      <obj_property name="ElementShortName">addra2[18:0]</obj_property>
+      <obj_property name="ObjectShortName">addra2[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/Write" type="logic">
+      <obj_property name="ElementShortName">Write</obj_property>
+      <obj_property name="ObjectShortName">Write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/tellerdriehoek" type="other">
+      <obj_property name="ElementShortName">tellerdriehoek</obj_property>
+      <obj_property name="ObjectShortName">tellerdriehoek</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/telleraantaldriehoeken" type="other">
+      <obj_property name="ElementShortName">telleraantaldriehoeken</obj_property>
+      <obj_property name="ObjectShortName">telleraantaldriehoeken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/tel" type="other">
+      <obj_property name="ElementShortName">tel</obj_property>
+      <obj_property name="ObjectShortName">tel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/x" type="other">
+      <obj_property name="ElementShortName">x</obj_property>
+      <obj_property name="ObjectShortName">x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/y" type="other">
+      <obj_property name="ElementShortName">y</obj_property>
+      <obj_property name="ObjectShortName">y</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/sx" type="other">
+      <obj_property name="ElementShortName">sx</obj_property>
+      <obj_property name="ObjectShortName">sx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/sy" type="other">
+      <obj_property name="ElementShortName">sy</obj_property>
+      <obj_property name="ObjectShortName">sy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/x0" type="array">
+      <obj_property name="ElementShortName">x0[9:0]</obj_property>
+      <obj_property name="ObjectShortName">x0[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/x1" type="array">
+      <obj_property name="ElementShortName">x1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/y0" type="array">
+      <obj_property name="ElementShortName">y0[8:0]</obj_property>
+      <obj_property name="ObjectShortName">y0[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/y1" type="array">
+      <obj_property name="ElementShortName">y1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">y1[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/frame_af_bresen" type="logic">
+      <obj_property name="ElementShortName">frame_af_bresen</obj_property>
+      <obj_property name="ObjectShortName">frame_af_bresen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/dout" type="array">
+      <obj_property name="ElementShortName">dout[58:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[58:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/recentstedata" type="array">
+      <obj_property name="ElementShortName">recentstedata[58:0]</obj_property>
+      <obj_property name="ObjectShortName">recentstedata[58:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/disp/y0" type="array">
+      <obj_property name="ElementShortName">y0[8:0]</obj_property>
+      <obj_property name="ObjectShortName">y0[8:0]</obj_property>
+   </wvobject>
+</wave_config>

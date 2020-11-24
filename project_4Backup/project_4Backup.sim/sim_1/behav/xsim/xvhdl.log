@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wout/Documents/School/3digitaleElektronica/project_4_5AF/project_4_5AF.srcs/sources_1/new/Hpulse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HPulse
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wout/Documents/School/3digitaleElektronica/project_4_5AF/project_4_5AF.srcs/sources_1/new/package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wout/Documents/School/3digitaleElektronica/project_4_5AF/project_4_5AF.srcs/sources_1/new/Vpulse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity VPulse
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wout/Documents/School/3digitaleElektronica/project_4_5AF/project_4_5AF.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wout/Documents/School/3digitaleElektronica/project_4_5AF/project_4_5AF.srcs/sim_1/new/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb

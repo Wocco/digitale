@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct  8 13:47:06 2019
+# Process ID: 11020
+# Current directory: C:/Users/Wout/Documents/School/3 digitale Elektronica/project_1_kopie/project_1_kopie.runs/impl_1
+# Command line: vivado.exe -log Controller.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Controller.tcl -notrace
+# Log file: C:/Users/Wout/Documents/School/3 digitale Elektronica/project_1_kopie/project_1_kopie.runs/impl_1/Controller.vdi
+# Journal file: C:/Users/Wout/Documents/School/3 digitale Elektronica/project_1_kopie/project_1_kopie.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Controller.tcl -notrace

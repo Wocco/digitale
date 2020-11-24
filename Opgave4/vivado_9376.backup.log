@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 14 11:29:11 2019
+# Process ID: 9376
+# Current directory: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12260 C:\Users\Wout\Documents\School\3digitaleElektronica\Opgave4\Opgave4.xpr
+# Log file: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/vivado.log
+# Journal file: C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Wout/Documents/School/3 digitale Elektronica/Opgave4' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 925.949 ; gain = 177.855
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.sim/sim_1/behav/xsim/FPA1.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/TriangleFifo/sim/TriangleFifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TriangleFifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/ClockingWizard/ClockingWizard_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockingWizard_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/ip/ClockingWizard/ClockingWizard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockingWizard
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/Hpulse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HPulse
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/Vpulse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity VPulse
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sim_1/new/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3dafb6be098d40ceb905a0b411857d14 --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] lfsr remains a black-box since it has no binding entity [C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.srcs/sources_1/new/top.vhd:81]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.examplepackage
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=36.37...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.ClockingWizard_clk_wiz
+Compiling module xil_defaultlib.ClockingWizard
+Compiling architecture behavioral of entity xil_defaultlib.HPulse [hpulse_default]
+Compiling architecture behavioral of entity xil_defaultlib.VPulse [vpulse_default]
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_s...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_CONV_VER(...
+Compiling module fifo_generator_v13_2_2.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2(C_COMMON_...
+Compiling module xil_defaultlib.TriangleFifo
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Wout/Documents/School/3digitaleElektronica/Opgave4/Opgave4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: [Simulator 45-7] No such file 'C:/Users/Wout/Documents/School/3' in the design.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 943.578 ; gain = 9.777
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 14 11:30:38 2019...

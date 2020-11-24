@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29403.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{57791927-2CD2-4346-8A27-A2725836BD19}") = "bresenham", "bresenham\bresenham.v3sproj", "{093C7F7A-D6F8-4849-80FF-476AA9A7D855}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Full Compilation|Default = Full Compilation|Default
+		Syntax Check|Default = Syntax Check|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{093C7F7A-D6F8-4849-80FF-476AA9A7D855}.Full Compilation|Default.ActiveCfg = Full Compilation
+		{093C7F7A-D6F8-4849-80FF-476AA9A7D855}.Full Compilation|Default.Build.0 = Full Compilation
+		{093C7F7A-D6F8-4849-80FF-476AA9A7D855}.Syntax Check|Default.ActiveCfg = Syntax Check
+		{093C7F7A-D6F8-4849-80FF-476AA9A7D855}.Syntax Check|Default.Build.0 = Syntax Check
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B89E213-4D5B-4A6D-940D-F9B1A8D45B05}
+	EndGlobalSection
+EndGlobal

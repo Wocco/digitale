@@ -1,0 +1,1505 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Nov 28 16:28:29 2019
+| Host         : DESKTOP-3EC4Q02 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
+| Design       : top
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.22 2018-03-21
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 612 register/latch pins with no clock driven by root clock pin: CLK100MHZ (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/HS/HCounter_reg[0]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/HS/HCounter_reg[1]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/HS/HCounter_reg[2]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/HS/HCounter_reg[3]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/HS/HCounter_reg[4]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/HS/HCounter_reg[5]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/HS/HCounter_reg[6]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/HS/HCounter_reg[7]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/HS/HCounter_reg[8]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/HS/HCounter_reg[9]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/VCounter_reg[0]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/VCounter_reg[1]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/VCounter_reg[2]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/VCounter_reg[3]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/VCounter_reg[4]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/VCounter_reg[5]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/VCounter_reg[6]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/VCounter_reg[7]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/VCounter_reg[8]/Q (HIGH)
+
+ There are 38 register/latch pins with no clock driven by root clock pin: VSync/VCounter_reg[9]/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 2420 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 14 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     33.820        0.000                      0                  118        0.188        0.000                      0                  118        3.000        0.000                       0                   112  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----                        ------------       ----------      --------------
+clk/inst/Clk100MHz           {0.000 5.000}      10.000          100.000         
+  clkfbout_ClockingWizard    {0.000 20.000}     40.000          25.000          
+  pixelClock_ClockingWizard  {0.000 19.863}     39.725          25.173          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                            WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                            -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk/inst/Clk100MHz                                                                                                                                                             3.000        0.000                       0                     1  
+  clkfbout_ClockingWizard                                                                                                                                                     37.845        0.000                       0                     3  
+  pixelClock_ClockingWizard       33.820        0.000                      0                  118        0.188        0.000                      0                  118       19.363        0.000                       0                   108  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk/inst/Clk100MHz
+  To Clock:  clk/inst/Clk100MHz
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk/inst/Clk100MHz
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk/inst/Clk100MHz }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_ClockingWizard
+  To Clock:  clkfbout_ClockingWizard
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       37.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_ClockingWizard
+Waveform(ns):       { 0.000 20.000 }
+Period(ns):         40.000
+Sources:            { clk/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            2.155         40.000      37.845     BUFGCTRL_X0Y2    clk/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         40.000      38.751     MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         40.000      38.751     MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       40.000      60.000     MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       40.000      173.360    MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKFBOUT
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  pixelClock_ClockingWizard
+  To Clock:  pixelClock_ClockingWizard
+
+Setup :            0  Failing Endpoints,  Worst Slack       33.820ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.188ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       19.363ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             33.820ns  (required time - arrival time)
+  Source:                 VSync/HS/HCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[5]/R
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            39.725ns  (pixelClock_ClockingWizard rise@39.725ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        5.191ns  (logic 1.182ns (22.768%)  route 4.009ns (77.232%))
+  Logic Levels:           4  (LUT4=4)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.584ns = ( 41.309 - 39.725 ) 
+    Source Clock Delay      (SCD):    1.703ns
+    Clock Pessimism Removal (CPR):    0.093ns
+  Clock Uncertainty:      0.164ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.320ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.809     1.809    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.701     1.703    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.456     2.159 f  VSync/HS/HCounter_reg[3]/Q
+                         net (fo=8, routed)           1.323     3.482    VSync/HS/HCounter_reg__0[3]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  VSync/HS/tel0_i_21/O
+                         net (fo=1, routed)           0.436     4.070    VSync/HS/tel0_i_21_n_1
+    SLICE_X77Y109        LUT4 (Prop_lut4_I0_O)        0.326     4.396 r  VSync/HS/tel0_i_20/O
+                         net (fo=2, routed)           0.573     4.969    VSync/HS/tel0_i_20_n_1
+    SLICE_X79Y111        LUT4 (Prop_lut4_I3_O)        0.124     5.093 f  VSync/HS/VGA_R_OBUF[3]_inst_i_3/O
+                         net (fo=14, routed)          0.863     5.957    VSync/HS/VGA_R_OBUF[3]_inst_i_3_n_1
+    SLICE_X76Y111        LUT4 (Prop_lut4_I0_O)        0.124     6.081 r  VSync/HS/VCounter[9]_i_1/O
+                         net (fo=10, routed)          0.814     6.894    VSync/VCounter
+    SLICE_X74Y111        FDRE                                         r  VSync/VCounter_reg[5]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                     39.725    39.725 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    39.725 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.683    41.408    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694    37.714 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923    39.637    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    39.728 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.581    41.309    VSync/CLK
+    SLICE_X74Y111        FDRE                                         r  VSync/VCounter_reg[5]/C
+                         clock pessimism              0.093    41.402    
+                         clock uncertainty           -0.164    41.238    
+    SLICE_X74Y111        FDRE (Setup_fdre_C_R)       -0.524    40.714    VSync/VCounter_reg[5]
+  -------------------------------------------------------------------
+                         required time                         40.714    
+                         arrival time                          -6.894    
+  -------------------------------------------------------------------
+                         slack                                 33.820    
+
+Slack (MET) :             33.915ns  (required time - arrival time)
+  Source:                 VSync/HS/HCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[7]/R
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            39.725ns  (pixelClock_ClockingWizard rise@39.725ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        5.191ns  (logic 1.182ns (22.768%)  route 4.009ns (77.232%))
+  Logic Levels:           4  (LUT4=4)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.584ns = ( 41.309 - 39.725 ) 
+    Source Clock Delay      (SCD):    1.703ns
+    Clock Pessimism Removal (CPR):    0.093ns
+  Clock Uncertainty:      0.164ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.320ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.809     1.809    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.701     1.703    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.456     2.159 f  VSync/HS/HCounter_reg[3]/Q
+                         net (fo=8, routed)           1.323     3.482    VSync/HS/HCounter_reg__0[3]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  VSync/HS/tel0_i_21/O
+                         net (fo=1, routed)           0.436     4.070    VSync/HS/tel0_i_21_n_1
+    SLICE_X77Y109        LUT4 (Prop_lut4_I0_O)        0.326     4.396 r  VSync/HS/tel0_i_20/O
+                         net (fo=2, routed)           0.573     4.969    VSync/HS/tel0_i_20_n_1
+    SLICE_X79Y111        LUT4 (Prop_lut4_I3_O)        0.124     5.093 f  VSync/HS/VGA_R_OBUF[3]_inst_i_3/O
+                         net (fo=14, routed)          0.863     5.957    VSync/HS/VGA_R_OBUF[3]_inst_i_3_n_1
+    SLICE_X76Y111        LUT4 (Prop_lut4_I0_O)        0.124     6.081 r  VSync/HS/VCounter[9]_i_1/O
+                         net (fo=10, routed)          0.814     6.894    VSync/VCounter
+    SLICE_X75Y111        FDRE                                         r  VSync/VCounter_reg[7]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                     39.725    39.725 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    39.725 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.683    41.408    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694    37.714 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923    39.637    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    39.728 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.581    41.309    VSync/CLK
+    SLICE_X75Y111        FDRE                                         r  VSync/VCounter_reg[7]/C
+                         clock pessimism              0.093    41.402    
+                         clock uncertainty           -0.164    41.238    
+    SLICE_X75Y111        FDRE (Setup_fdre_C_R)       -0.429    40.809    VSync/VCounter_reg[7]
+  -------------------------------------------------------------------
+                         required time                         40.809    
+                         arrival time                          -6.894    
+  -------------------------------------------------------------------
+                         slack                                 33.915    
+
+Slack (MET) :             33.915ns  (required time - arrival time)
+  Source:                 VSync/HS/HCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[8]/R
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            39.725ns  (pixelClock_ClockingWizard rise@39.725ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        5.191ns  (logic 1.182ns (22.768%)  route 4.009ns (77.232%))
+  Logic Levels:           4  (LUT4=4)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.584ns = ( 41.309 - 39.725 ) 
+    Source Clock Delay      (SCD):    1.703ns
+    Clock Pessimism Removal (CPR):    0.093ns
+  Clock Uncertainty:      0.164ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.320ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.809     1.809    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.701     1.703    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.456     2.159 f  VSync/HS/HCounter_reg[3]/Q
+                         net (fo=8, routed)           1.323     3.482    VSync/HS/HCounter_reg__0[3]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  VSync/HS/tel0_i_21/O
+                         net (fo=1, routed)           0.436     4.070    VSync/HS/tel0_i_21_n_1
+    SLICE_X77Y109        LUT4 (Prop_lut4_I0_O)        0.326     4.396 r  VSync/HS/tel0_i_20/O
+                         net (fo=2, routed)           0.573     4.969    VSync/HS/tel0_i_20_n_1
+    SLICE_X79Y111        LUT4 (Prop_lut4_I3_O)        0.124     5.093 f  VSync/HS/VGA_R_OBUF[3]_inst_i_3/O
+                         net (fo=14, routed)          0.863     5.957    VSync/HS/VGA_R_OBUF[3]_inst_i_3_n_1
+    SLICE_X76Y111        LUT4 (Prop_lut4_I0_O)        0.124     6.081 r  VSync/HS/VCounter[9]_i_1/O
+                         net (fo=10, routed)          0.814     6.894    VSync/VCounter
+    SLICE_X75Y111        FDRE                                         r  VSync/VCounter_reg[8]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                     39.725    39.725 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    39.725 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.683    41.408    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694    37.714 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923    39.637    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    39.728 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.581    41.309    VSync/CLK
+    SLICE_X75Y111        FDRE                                         r  VSync/VCounter_reg[8]/C
+                         clock pessimism              0.093    41.402    
+                         clock uncertainty           -0.164    41.238    
+    SLICE_X75Y111        FDRE (Setup_fdre_C_R)       -0.429    40.809    VSync/VCounter_reg[8]
+  -------------------------------------------------------------------
+                         required time                         40.809    
+                         arrival time                          -6.894    
+  -------------------------------------------------------------------
+                         slack                                 33.915    
+
+Slack (MET) :             33.915ns  (required time - arrival time)
+  Source:                 VSync/HS/HCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[9]/R
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            39.725ns  (pixelClock_ClockingWizard rise@39.725ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        5.191ns  (logic 1.182ns (22.768%)  route 4.009ns (77.232%))
+  Logic Levels:           4  (LUT4=4)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.584ns = ( 41.309 - 39.725 ) 
+    Source Clock Delay      (SCD):    1.703ns
+    Clock Pessimism Removal (CPR):    0.093ns
+  Clock Uncertainty:      0.164ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.320ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.809     1.809    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.701     1.703    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.456     2.159 f  VSync/HS/HCounter_reg[3]/Q
+                         net (fo=8, routed)           1.323     3.482    VSync/HS/HCounter_reg__0[3]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  VSync/HS/tel0_i_21/O
+                         net (fo=1, routed)           0.436     4.070    VSync/HS/tel0_i_21_n_1
+    SLICE_X77Y109        LUT4 (Prop_lut4_I0_O)        0.326     4.396 r  VSync/HS/tel0_i_20/O
+                         net (fo=2, routed)           0.573     4.969    VSync/HS/tel0_i_20_n_1
+    SLICE_X79Y111        LUT4 (Prop_lut4_I3_O)        0.124     5.093 f  VSync/HS/VGA_R_OBUF[3]_inst_i_3/O
+                         net (fo=14, routed)          0.863     5.957    VSync/HS/VGA_R_OBUF[3]_inst_i_3_n_1
+    SLICE_X76Y111        LUT4 (Prop_lut4_I0_O)        0.124     6.081 r  VSync/HS/VCounter[9]_i_1/O
+                         net (fo=10, routed)          0.814     6.894    VSync/VCounter
+    SLICE_X75Y111        FDRE                                         r  VSync/VCounter_reg[9]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                     39.725    39.725 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    39.725 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.683    41.408    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694    37.714 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923    39.637    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    39.728 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.581    41.309    VSync/CLK
+    SLICE_X75Y111        FDRE                                         r  VSync/VCounter_reg[9]/C
+                         clock pessimism              0.093    41.402    
+                         clock uncertainty           -0.164    41.238    
+    SLICE_X75Y111        FDRE (Setup_fdre_C_R)       -0.429    40.809    VSync/VCounter_reg[9]
+  -------------------------------------------------------------------
+                         required time                         40.809    
+                         arrival time                          -6.894    
+  -------------------------------------------------------------------
+                         slack                                 33.915    
+
+Slack (MET) :             33.932ns  (required time - arrival time)
+  Source:                 VSync/HS/HCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[4]/R
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            39.725ns  (pixelClock_ClockingWizard rise@39.725ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        5.078ns  (logic 1.182ns (23.277%)  route 3.896ns (76.723%))
+  Logic Levels:           4  (LUT4=4)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.583ns = ( 41.308 - 39.725 ) 
+    Source Clock Delay      (SCD):    1.703ns
+    Clock Pessimism Removal (CPR):    0.093ns
+  Clock Uncertainty:      0.164ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.320ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.809     1.809    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.701     1.703    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.456     2.159 f  VSync/HS/HCounter_reg[3]/Q
+                         net (fo=8, routed)           1.323     3.482    VSync/HS/HCounter_reg__0[3]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  VSync/HS/tel0_i_21/O
+                         net (fo=1, routed)           0.436     4.070    VSync/HS/tel0_i_21_n_1
+    SLICE_X77Y109        LUT4 (Prop_lut4_I0_O)        0.326     4.396 r  VSync/HS/tel0_i_20/O
+                         net (fo=2, routed)           0.573     4.969    VSync/HS/tel0_i_20_n_1
+    SLICE_X79Y111        LUT4 (Prop_lut4_I3_O)        0.124     5.093 f  VSync/HS/VGA_R_OBUF[3]_inst_i_3/O
+                         net (fo=14, routed)          0.863     5.957    VSync/HS/VGA_R_OBUF[3]_inst_i_3_n_1
+    SLICE_X76Y111        LUT4 (Prop_lut4_I0_O)        0.124     6.081 r  VSync/HS/VCounter[9]_i_1/O
+                         net (fo=10, routed)          0.700     6.781    VSync/VCounter
+    SLICE_X74Y112        FDRE                                         r  VSync/VCounter_reg[4]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                     39.725    39.725 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    39.725 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.683    41.408    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694    37.714 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923    39.637    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    39.728 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.580    41.308    VSync/CLK
+    SLICE_X74Y112        FDRE                                         r  VSync/VCounter_reg[4]/C
+                         clock pessimism              0.093    41.401    
+                         clock uncertainty           -0.164    41.237    
+    SLICE_X74Y112        FDRE (Setup_fdre_C_R)       -0.524    40.713    VSync/VCounter_reg[4]
+  -------------------------------------------------------------------
+                         required time                         40.713    
+                         arrival time                          -6.781    
+  -------------------------------------------------------------------
+                         slack                                 33.932    
+
+Slack (MET) :             33.967ns  (required time - arrival time)
+  Source:                 VSync/HS/HCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            39.725ns  (pixelClock_ClockingWizard rise@39.725ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        5.046ns  (logic 1.182ns (23.426%)  route 3.864ns (76.574%))
+  Logic Levels:           4  (LUT4=4)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.585ns = ( 41.310 - 39.725 ) 
+    Source Clock Delay      (SCD):    1.703ns
+    Clock Pessimism Removal (CPR):    0.093ns
+  Clock Uncertainty:      0.164ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.320ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.809     1.809    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.701     1.703    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.456     2.159 f  VSync/HS/HCounter_reg[3]/Q
+                         net (fo=8, routed)           1.323     3.482    VSync/HS/HCounter_reg__0[3]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  VSync/HS/tel0_i_21/O
+                         net (fo=1, routed)           0.436     4.070    VSync/HS/tel0_i_21_n_1
+    SLICE_X77Y109        LUT4 (Prop_lut4_I0_O)        0.326     4.396 r  VSync/HS/tel0_i_20/O
+                         net (fo=2, routed)           0.573     4.969    VSync/HS/tel0_i_20_n_1
+    SLICE_X79Y111        LUT4 (Prop_lut4_I3_O)        0.124     5.093 f  VSync/HS/VGA_R_OBUF[3]_inst_i_3/O
+                         net (fo=14, routed)          0.863     5.957    VSync/HS/VGA_R_OBUF[3]_inst_i_3_n_1
+    SLICE_X76Y111        LUT4 (Prop_lut4_I0_O)        0.124     6.081 r  VSync/HS/VCounter[9]_i_1/O
+                         net (fo=10, routed)          0.668     6.749    VSync/VCounter
+    SLICE_X74Y110        FDRE                                         r  VSync/VCounter_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                     39.725    39.725 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    39.725 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.683    41.408    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694    37.714 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923    39.637    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    39.728 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.582    41.310    VSync/CLK
+    SLICE_X74Y110        FDRE                                         r  VSync/VCounter_reg[0]/C
+                         clock pessimism              0.093    41.403    
+                         clock uncertainty           -0.164    41.239    
+    SLICE_X74Y110        FDRE (Setup_fdre_C_R)       -0.524    40.715    VSync/VCounter_reg[0]
+  -------------------------------------------------------------------
+                         required time                         40.715    
+                         arrival time                          -6.749    
+  -------------------------------------------------------------------
+                         slack                                 33.967    
+
+Slack (MET) :             33.967ns  (required time - arrival time)
+  Source:                 VSync/HS/HCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[1]/R
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            39.725ns  (pixelClock_ClockingWizard rise@39.725ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        5.046ns  (logic 1.182ns (23.426%)  route 3.864ns (76.574%))
+  Logic Levels:           4  (LUT4=4)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.585ns = ( 41.310 - 39.725 ) 
+    Source Clock Delay      (SCD):    1.703ns
+    Clock Pessimism Removal (CPR):    0.093ns
+  Clock Uncertainty:      0.164ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.320ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.809     1.809    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.701     1.703    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.456     2.159 f  VSync/HS/HCounter_reg[3]/Q
+                         net (fo=8, routed)           1.323     3.482    VSync/HS/HCounter_reg__0[3]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  VSync/HS/tel0_i_21/O
+                         net (fo=1, routed)           0.436     4.070    VSync/HS/tel0_i_21_n_1
+    SLICE_X77Y109        LUT4 (Prop_lut4_I0_O)        0.326     4.396 r  VSync/HS/tel0_i_20/O
+                         net (fo=2, routed)           0.573     4.969    VSync/HS/tel0_i_20_n_1
+    SLICE_X79Y111        LUT4 (Prop_lut4_I3_O)        0.124     5.093 f  VSync/HS/VGA_R_OBUF[3]_inst_i_3/O
+                         net (fo=14, routed)          0.863     5.957    VSync/HS/VGA_R_OBUF[3]_inst_i_3_n_1
+    SLICE_X76Y111        LUT4 (Prop_lut4_I0_O)        0.124     6.081 r  VSync/HS/VCounter[9]_i_1/O
+                         net (fo=10, routed)          0.668     6.749    VSync/VCounter
+    SLICE_X74Y110        FDRE                                         r  VSync/VCounter_reg[1]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                     39.725    39.725 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    39.725 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.683    41.408    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694    37.714 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923    39.637    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    39.728 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.582    41.310    VSync/CLK
+    SLICE_X74Y110        FDRE                                         r  VSync/VCounter_reg[1]/C
+                         clock pessimism              0.093    41.403    
+                         clock uncertainty           -0.164    41.239    
+    SLICE_X74Y110        FDRE (Setup_fdre_C_R)       -0.524    40.715    VSync/VCounter_reg[1]
+  -------------------------------------------------------------------
+                         required time                         40.715    
+                         arrival time                          -6.749    
+  -------------------------------------------------------------------
+                         slack                                 33.967    
+
+Slack (MET) :             33.967ns  (required time - arrival time)
+  Source:                 VSync/HS/HCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[2]/R
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            39.725ns  (pixelClock_ClockingWizard rise@39.725ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        5.046ns  (logic 1.182ns (23.426%)  route 3.864ns (76.574%))
+  Logic Levels:           4  (LUT4=4)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.585ns = ( 41.310 - 39.725 ) 
+    Source Clock Delay      (SCD):    1.703ns
+    Clock Pessimism Removal (CPR):    0.093ns
+  Clock Uncertainty:      0.164ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.320ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.809     1.809    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.701     1.703    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.456     2.159 f  VSync/HS/HCounter_reg[3]/Q
+                         net (fo=8, routed)           1.323     3.482    VSync/HS/HCounter_reg__0[3]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  VSync/HS/tel0_i_21/O
+                         net (fo=1, routed)           0.436     4.070    VSync/HS/tel0_i_21_n_1
+    SLICE_X77Y109        LUT4 (Prop_lut4_I0_O)        0.326     4.396 r  VSync/HS/tel0_i_20/O
+                         net (fo=2, routed)           0.573     4.969    VSync/HS/tel0_i_20_n_1
+    SLICE_X79Y111        LUT4 (Prop_lut4_I3_O)        0.124     5.093 f  VSync/HS/VGA_R_OBUF[3]_inst_i_3/O
+                         net (fo=14, routed)          0.863     5.957    VSync/HS/VGA_R_OBUF[3]_inst_i_3_n_1
+    SLICE_X76Y111        LUT4 (Prop_lut4_I0_O)        0.124     6.081 r  VSync/HS/VCounter[9]_i_1/O
+                         net (fo=10, routed)          0.668     6.749    VSync/VCounter
+    SLICE_X74Y110        FDRE                                         r  VSync/VCounter_reg[2]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                     39.725    39.725 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    39.725 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.683    41.408    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694    37.714 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923    39.637    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    39.728 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.582    41.310    VSync/CLK
+    SLICE_X74Y110        FDRE                                         r  VSync/VCounter_reg[2]/C
+                         clock pessimism              0.093    41.403    
+                         clock uncertainty           -0.164    41.239    
+    SLICE_X74Y110        FDRE (Setup_fdre_C_R)       -0.524    40.715    VSync/VCounter_reg[2]
+  -------------------------------------------------------------------
+                         required time                         40.715    
+                         arrival time                          -6.749    
+  -------------------------------------------------------------------
+                         slack                                 33.967    
+
+Slack (MET) :             34.082ns  (required time - arrival time)
+  Source:                 VSync/HS/HCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[3]/R
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            39.725ns  (pixelClock_ClockingWizard rise@39.725ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        4.929ns  (logic 1.182ns (23.981%)  route 3.747ns (76.019%))
+  Logic Levels:           4  (LUT4=4)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.584ns = ( 41.309 - 39.725 ) 
+    Source Clock Delay      (SCD):    1.703ns
+    Clock Pessimism Removal (CPR):    0.093ns
+  Clock Uncertainty:      0.164ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.320ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.809     1.809    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.701     1.703    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.456     2.159 f  VSync/HS/HCounter_reg[3]/Q
+                         net (fo=8, routed)           1.323     3.482    VSync/HS/HCounter_reg__0[3]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  VSync/HS/tel0_i_21/O
+                         net (fo=1, routed)           0.436     4.070    VSync/HS/tel0_i_21_n_1
+    SLICE_X77Y109        LUT4 (Prop_lut4_I0_O)        0.326     4.396 r  VSync/HS/tel0_i_20/O
+                         net (fo=2, routed)           0.573     4.969    VSync/HS/tel0_i_20_n_1
+    SLICE_X79Y111        LUT4 (Prop_lut4_I3_O)        0.124     5.093 f  VSync/HS/VGA_R_OBUF[3]_inst_i_3/O
+                         net (fo=14, routed)          0.863     5.957    VSync/HS/VGA_R_OBUF[3]_inst_i_3_n_1
+    SLICE_X76Y111        LUT4 (Prop_lut4_I0_O)        0.124     6.081 r  VSync/HS/VCounter[9]_i_1/O
+                         net (fo=10, routed)          0.551     6.632    VSync/VCounter
+    SLICE_X76Y111        FDRE                                         r  VSync/VCounter_reg[3]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                     39.725    39.725 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    39.725 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.683    41.408    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694    37.714 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923    39.637    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    39.728 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.581    41.309    VSync/CLK
+    SLICE_X76Y111        FDRE                                         r  VSync/VCounter_reg[3]/C
+                         clock pessimism              0.093    41.402    
+                         clock uncertainty           -0.164    41.238    
+    SLICE_X76Y111        FDRE (Setup_fdre_C_R)       -0.524    40.714    VSync/VCounter_reg[3]
+  -------------------------------------------------------------------
+                         required time                         40.714    
+                         arrival time                          -6.632    
+  -------------------------------------------------------------------
+                         slack                                 34.082    
+
+Slack (MET) :             34.082ns  (required time - arrival time)
+  Source:                 VSync/HS/HCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[6]/R
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            39.725ns  (pixelClock_ClockingWizard rise@39.725ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        4.929ns  (logic 1.182ns (23.981%)  route 3.747ns (76.019%))
+  Logic Levels:           4  (LUT4=4)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.584ns = ( 41.309 - 39.725 ) 
+    Source Clock Delay      (SCD):    1.703ns
+    Clock Pessimism Removal (CPR):    0.093ns
+  Clock Uncertainty:      0.164ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.320ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.809     1.809    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.922    -2.112 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.018    -0.094    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.701     1.703    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.456     2.159 f  VSync/HS/HCounter_reg[3]/Q
+                         net (fo=8, routed)           1.323     3.482    VSync/HS/HCounter_reg__0[3]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  VSync/HS/tel0_i_21/O
+                         net (fo=1, routed)           0.436     4.070    VSync/HS/tel0_i_21_n_1
+    SLICE_X77Y109        LUT4 (Prop_lut4_I0_O)        0.326     4.396 r  VSync/HS/tel0_i_20/O
+                         net (fo=2, routed)           0.573     4.969    VSync/HS/tel0_i_20_n_1
+    SLICE_X79Y111        LUT4 (Prop_lut4_I3_O)        0.124     5.093 f  VSync/HS/VGA_R_OBUF[3]_inst_i_3/O
+                         net (fo=14, routed)          0.863     5.957    VSync/HS/VGA_R_OBUF[3]_inst_i_3_n_1
+    SLICE_X76Y111        LUT4 (Prop_lut4_I0_O)        0.124     6.081 r  VSync/HS/VCounter[9]_i_1/O
+                         net (fo=10, routed)          0.551     6.632    VSync/VCounter
+    SLICE_X76Y111        FDRE                                         r  VSync/VCounter_reg[6]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                     39.725    39.725 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    39.725 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         1.683    41.408    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.694    37.714 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.923    39.637    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    39.728 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         1.581    41.309    VSync/CLK
+    SLICE_X76Y111        FDRE                                         r  VSync/VCounter_reg[6]/C
+                         clock pessimism              0.093    41.402    
+                         clock uncertainty           -0.164    41.238    
+    SLICE_X76Y111        FDRE (Setup_fdre_C_R)       -0.524    40.714    VSync/VCounter_reg[6]
+  -------------------------------------------------------------------
+                         required time                         40.714    
+                         arrival time                          -6.632    
+  -------------------------------------------------------------------
+                         slack                                 34.082    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.188ns  (arrival time - required time)
+  Source:                 VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pixelClock_ClockingWizard rise@0.000ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        0.263ns  (logic 0.141ns (53.584%)  route 0.122ns (46.416%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.869ns
+    Source Clock Delay      (SCD):    0.596ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.624     0.624    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.594     0.596    VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/clkb
+    SLICE_X77Y91         FDRE                                         r  VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y91         FDRE (Prop_fdre_C_Q)         0.141     0.737 r  VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/Q
+                         net (fo=3, routed)           0.122     0.859    VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg_n_0_[0]
+    SLICE_X76Y90         FDRE                                         r  VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.898     0.898    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.867     0.869    VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/clkb
+    SLICE_X76Y90         FDRE                                         r  VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/C
+                         clock pessimism             -0.257     0.612    
+    SLICE_X76Y90         FDRE (Hold_fdre_C_D)         0.059     0.671    VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -0.671    
+                         arrival time                           0.859    
+  -------------------------------------------------------------------
+                         slack                                  0.188    
+
+Slack (MET) :             0.214ns  (arrival time - required time)
+  Source:                 VSync/VCounter_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pixelClock_ClockingWizard rise@0.000ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        0.351ns  (logic 0.209ns (59.569%)  route 0.142ns (40.431%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.866ns
+    Source Clock Delay      (SCD):    0.592ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.624     0.624    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.590     0.592    VSync/CLK
+    SLICE_X74Y112        FDRE                                         r  VSync/VCounter_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X74Y112        FDRE (Prop_fdre_C_Q)         0.164     0.756 r  VSync/VCounter_reg[4]/Q
+                         net (fo=7, routed)           0.142     0.898    VSync/VCounter_reg__0[4]
+    SLICE_X74Y111        LUT6 (Prop_lut6_I4_O)        0.045     0.943 r  VSync/VCounter[5]_i_1/O
+                         net (fo=1, routed)           0.000     0.943    VSync/p_0_in__0[5]
+    SLICE_X74Y111        FDRE                                         r  VSync/VCounter_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.898     0.898    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.864     0.866    VSync/CLK
+    SLICE_X74Y111        FDRE                                         r  VSync/VCounter_reg[5]/C
+                         clock pessimism             -0.257     0.609    
+    SLICE_X74Y111        FDRE (Hold_fdre_C_D)         0.120     0.729    VSync/VCounter_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -0.729    
+                         arrival time                           0.943    
+  -------------------------------------------------------------------
+                         slack                                  0.214    
+
+Slack (MET) :             0.217ns  (arrival time - required time)
+  Source:                 VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pixelClock_ClockingWizard rise@0.000ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        0.283ns  (logic 0.141ns (49.771%)  route 0.142ns (50.229%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.848ns
+    Source Clock Delay      (SCD):    0.580ns
+    Clock Pessimism Removal (CPR):    0.269ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.624     0.624    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.578     0.580    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/clkb
+    SLICE_X72Y124        FDRE                                         r  VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X72Y124        FDRE (Prop_fdre_C_Q)         0.141     0.721 r  VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/Q
+                         net (fo=3, routed)           0.142     0.863    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg_n_0_[0]
+    SLICE_X72Y124        FDRE                                         r  VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.898     0.898    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.846     0.848    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/clkb
+    SLICE_X72Y124        FDRE                                         r  VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/C
+                         clock pessimism             -0.269     0.580    
+    SLICE_X72Y124        FDRE (Hold_fdre_C_D)         0.066     0.646    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -0.646    
+                         arrival time                           0.863    
+  -------------------------------------------------------------------
+                         slack                                  0.217    
+
+Slack (MET) :             0.218ns  (arrival time - required time)
+  Source:                 VSync/VCounter_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pixelClock_ClockingWizard rise@0.000ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        0.310ns  (logic 0.227ns (73.156%)  route 0.083ns (26.844%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.866ns
+    Source Clock Delay      (SCD):    0.593ns
+    Clock Pessimism Removal (CPR):    0.273ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.624     0.624    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.591     0.593    VSync/CLK
+    SLICE_X75Y111        FDRE                                         r  VSync/VCounter_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X75Y111        FDRE (Prop_fdre_C_Q)         0.128     0.721 r  VSync/VCounter_reg[8]/Q
+                         net (fo=6, routed)           0.083     0.804    VSync/VCounter_reg__0[8]
+    SLICE_X75Y111        LUT6 (Prop_lut6_I4_O)        0.099     0.903 r  VSync/VCounter[9]_i_3/O
+                         net (fo=1, routed)           0.000     0.903    VSync/p_0_in__0[9]
+    SLICE_X75Y111        FDRE                                         r  VSync/VCounter_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.898     0.898    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.864     0.866    VSync/CLK
+    SLICE_X75Y111        FDRE                                         r  VSync/VCounter_reg[9]/C
+                         clock pessimism             -0.273     0.593    
+    SLICE_X75Y111        FDRE (Hold_fdre_C_D)         0.092     0.685    VSync/VCounter_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -0.685    
+                         arrival time                           0.903    
+  -------------------------------------------------------------------
+                         slack                                  0.218    
+
+Slack (MET) :             0.225ns  (arrival time - required time)
+  Source:                 VSync/HS/HCounter_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/HS/HCounter_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pixelClock_ClockingWizard rise@0.000ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        0.359ns  (logic 0.186ns (51.742%)  route 0.173ns (48.258%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.866ns
+    Source Clock Delay      (SCD):    0.594ns
+    Clock Pessimism Removal (CPR):    0.260ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.624     0.624    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.592     0.594    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.141     0.735 r  VSync/HS/HCounter_reg[6]/Q
+                         net (fo=9, routed)           0.173     0.908    VSync/HS/HCounter_reg__0[6]
+    SLICE_X76Y109        LUT3 (Prop_lut3_I2_O)        0.045     0.953 r  VSync/HS/HCounter[7]_i_1/O
+                         net (fo=1, routed)           0.000     0.953    VSync/HS/p_0_in[7]
+    SLICE_X76Y109        FDRE                                         r  VSync/HS/HCounter_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.898     0.898    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.865     0.867    VSync/HS/CLK
+    SLICE_X76Y109        FDRE                                         r  VSync/HS/HCounter_reg[7]/C
+                         clock pessimism             -0.260     0.607    
+    SLICE_X76Y109        FDRE (Hold_fdre_C_D)         0.121     0.728    VSync/HS/HCounter_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -0.728    
+                         arrival time                           0.953    
+  -------------------------------------------------------------------
+                         slack                                  0.225    
+
+Slack (MET) :             0.228ns  (arrival time - required time)
+  Source:                 VSync/HS/HCounter_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/HS/HCounter_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pixelClock_ClockingWizard rise@0.000ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        0.372ns  (logic 0.189ns (50.873%)  route 0.183ns (49.127%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.866ns
+    Source Clock Delay      (SCD):    0.594ns
+    Clock Pessimism Removal (CPR):    0.260ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.624     0.624    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.592     0.594    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.141     0.735 r  VSync/HS/HCounter_reg[6]/Q
+                         net (fo=9, routed)           0.183     0.917    VSync/HS/HCounter_reg__0[6]
+    SLICE_X76Y109        LUT5 (Prop_lut5_I2_O)        0.048     0.965 r  VSync/HS/HCounter[9]_i_2/O
+                         net (fo=1, routed)           0.000     0.965    VSync/HS/p_0_in[9]
+    SLICE_X76Y109        FDRE                                         r  VSync/HS/HCounter_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.898     0.898    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.865     0.867    VSync/HS/CLK
+    SLICE_X76Y109        FDRE                                         r  VSync/HS/HCounter_reg[9]/C
+                         clock pessimism             -0.260     0.607    
+    SLICE_X76Y109        FDRE (Hold_fdre_C_D)         0.131     0.738    VSync/HS/HCounter_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -0.738    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.228    
+
+Slack (MET) :             0.235ns  (arrival time - required time)
+  Source:                 VSync/HS/HCounter_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/HS/HCounter_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pixelClock_ClockingWizard rise@0.000ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        0.369ns  (logic 0.186ns (50.473%)  route 0.183ns (49.527%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.866ns
+    Source Clock Delay      (SCD):    0.594ns
+    Clock Pessimism Removal (CPR):    0.260ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.624     0.624    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.592     0.594    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y109        FDRE (Prop_fdre_C_Q)         0.141     0.735 r  VSync/HS/HCounter_reg[6]/Q
+                         net (fo=9, routed)           0.183     0.917    VSync/HS/HCounter_reg__0[6]
+    SLICE_X76Y109        LUT4 (Prop_lut4_I2_O)        0.045     0.962 r  VSync/HS/HCounter[8]_i_1/O
+                         net (fo=1, routed)           0.000     0.962    VSync/HS/p_0_in[8]
+    SLICE_X76Y109        FDRE                                         r  VSync/HS/HCounter_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.898     0.898    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.865     0.867    VSync/HS/CLK
+    SLICE_X76Y109        FDRE                                         r  VSync/HS/HCounter_reg[8]/C
+                         clock pessimism             -0.260     0.607    
+    SLICE_X76Y109        FDRE (Hold_fdre_C_D)         0.121     0.728    VSync/HS/HCounter_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -0.728    
+                         arrival time                           0.962    
+  -------------------------------------------------------------------
+                         slack                                  0.235    
+
+Slack (MET) :             0.242ns  (arrival time - required time)
+  Source:                 VSync/VCounter_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/VCounter_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pixelClock_ClockingWizard rise@0.000ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        0.389ns  (logic 0.212ns (54.505%)  route 0.177ns (45.495%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.864ns
+    Source Clock Delay      (SCD):    0.593ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.624     0.624    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.591     0.593    VSync/CLK
+    SLICE_X76Y111        FDRE                                         r  VSync/VCounter_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X76Y111        FDRE (Prop_fdre_C_Q)         0.164     0.757 r  VSync/VCounter_reg[3]/Q
+                         net (fo=9, routed)           0.177     0.934    VSync/VCounter_reg__0[3]
+    SLICE_X74Y112        LUT5 (Prop_lut5_I3_O)        0.048     0.982 r  VSync/VCounter[4]_i_1/O
+                         net (fo=1, routed)           0.000     0.982    VSync/p_0_in__0[4]
+    SLICE_X74Y112        FDRE                                         r  VSync/VCounter_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.898     0.898    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.862     0.863    VSync/CLK
+    SLICE_X74Y112        FDRE                                         r  VSync/VCounter_reg[4]/C
+                         clock pessimism             -0.257     0.607    
+    SLICE_X74Y112        FDRE (Hold_fdre_C_D)         0.133     0.740    VSync/VCounter_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -0.740    
+                         arrival time                           0.982    
+  -------------------------------------------------------------------
+                         slack                                  0.242    
+
+Slack (MET) :             0.246ns  (arrival time - required time)
+  Source:                 VSync/HS/HCounter_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/HS/HCounter_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pixelClock_ClockingWizard rise@0.000ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        0.350ns  (logic 0.209ns (59.741%)  route 0.141ns (40.259%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.866ns
+    Source Clock Delay      (SCD):    0.594ns
+    Clock Pessimism Removal (CPR):    0.260ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.624     0.624    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.592     0.594    VSync/HS/CLK
+    SLICE_X76Y109        FDRE                                         r  VSync/HS/HCounter_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X76Y109        FDRE (Prop_fdre_C_Q)         0.164     0.758 r  VSync/HS/HCounter_reg[1]/Q
+                         net (fo=10, routed)          0.141     0.899    VSync/HS/HCounter_reg__0[1]
+    SLICE_X77Y109        LUT4 (Prop_lut4_I2_O)        0.045     0.944 r  VSync/HS/HCounter[3]_i_1/O
+                         net (fo=1, routed)           0.000     0.944    VSync/HS/HCounter[3]_i_1_n_1
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.898     0.898    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.865     0.867    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[3]/C
+                         clock pessimism             -0.260     0.607    
+    SLICE_X77Y109        FDRE (Hold_fdre_C_D)         0.091     0.698    VSync/HS/HCounter_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -0.698    
+                         arrival time                           0.944    
+  -------------------------------------------------------------------
+                         slack                                  0.246    
+
+Slack (MET) :             0.246ns  (arrival time - required time)
+  Source:                 VSync/HS/HCounter_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Destination:            VSync/HS/HCounter_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by pixelClock_ClockingWizard  {rise@0.000ns fall@19.863ns period=39.725ns})
+  Path Group:             pixelClock_ClockingWizard
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pixelClock_ClockingWizard rise@0.000ns - pixelClock_ClockingWizard rise@0.000ns)
+  Data Path Delay:        0.351ns  (logic 0.209ns (59.571%)  route 0.142ns (40.429%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.866ns
+    Source Clock Delay      (SCD):    0.594ns
+    Clock Pessimism Removal (CPR):    0.260ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.624     0.624    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.296    -0.672 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.648    -0.024    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.592     0.594    VSync/HS/CLK
+    SLICE_X76Y109        FDRE                                         r  VSync/HS/HCounter_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X76Y109        FDRE (Prop_fdre_C_Q)         0.164     0.758 r  VSync/HS/HCounter_reg[1]/Q
+                         net (fo=10, routed)          0.142     0.900    VSync/HS/HCounter_reg__0[1]
+    SLICE_X77Y109        LUT6 (Prop_lut6_I3_O)        0.045     0.945 r  VSync/HS/HCounter[5]_i_1/O
+                         net (fo=1, routed)           0.000     0.945    VSync/HS/HCounter[5]_i_1_n_1
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pixelClock_ClockingWizard rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=613, routed)         0.898     0.898    clk/inst/Clk100MHz
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.625    -0.727 r  clk/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.700    -0.027    clk/inst/pixelClock_ClockingWizard
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  clk/inst/clkout1_buf/O
+                         net (fo=106, routed)         0.865     0.867    VSync/HS/CLK
+    SLICE_X77Y109        FDRE                                         r  VSync/HS/HCounter_reg[5]/C
+                         clock pessimism             -0.260     0.607    
+    SLICE_X77Y109        FDRE (Hold_fdre_C_D)         0.092     0.699    VSync/HS/HCounter_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -0.699    
+                         arrival time                           0.945    
+  -------------------------------------------------------------------
+                         slack                                  0.246    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         pixelClock_ClockingWizard
+Waveform(ns):       { 0.000 19.863 }
+Period(ns):         39.725
+Sources:            { clk/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.892         39.725      36.833     RAMB36_X1Y26     VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.892         39.725      36.833     RAMB36_X2Y29     VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.892         39.725      36.833     RAMB36_X1Y28     VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.892         39.725      36.833     RAMB36_X1Y16     VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.892         39.725      36.833     RAMB36_X3Y13     VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.892         39.725      36.833     RAMB36_X1Y27     VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.892         39.725      36.833     RAMB36_X3Y24     VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.892         39.725      36.833     RAMB36_X1Y29     VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.892         39.725      36.833     RAMB36_X1Y17     VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.892         39.725      36.833     RAMB36_X1Y14     VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKBWRCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       39.725      173.635    MMCME2_ADV_X0Y0  clk/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         19.863      19.363     SLICE_X64Y136    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B_cooolgate_en_gate_109_cooolDelFlop/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X71Y124    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[2]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X71Y124    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[3]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X70Y124    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[4]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X68Y115    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[2]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X68Y115    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[3]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X68Y115    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[4]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X72Y89     VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[2]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X72Y89     VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[3]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         19.863      19.363     SLICE_X69Y111    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B_cooolgate_en_gate_95_cooolDelFlop/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         19.863      19.363     SLICE_X71Y112    VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/VideoMem/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B_cooolgate_en_gate_102_cooolDelFlop/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         19.863      19.363     SLICE_X72Y73     VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/VideoMem2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B_cooolgate_en_gate_144_cooolDelFlop/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X75Y109    VSync/HS/HCounter_reg[0]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X76Y109    VSync/HS/HCounter_reg[1]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X76Y109    VSync/HS/HCounter_reg[2]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X77Y109    VSync/HS/HCounter_reg[3]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X77Y109    VSync/HS/HCounter_reg[4]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X77Y109    VSync/HS/HCounter_reg[5]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X77Y109    VSync/HS/HCounter_reg[6]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         19.863      19.363     SLICE_X76Y109    VSync/HS/HCounter_reg[7]/C
+
+
+
